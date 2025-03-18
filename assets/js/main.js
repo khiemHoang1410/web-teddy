@@ -112,33 +112,3 @@ sr.reveal('.home__perfil, .about__image', { origin: 'right' });
 sr.reveal('.home__name, .home__info, .about__container .section__title-1, .about__info', { origin: 'left' });
 sr.reveal('.services__card, .projects__card', { interval: 100 });
 
-// Lắng nghe sự thay đổi giá trị input và textarea
-const inputs = document.querySelectorAll('.contact__input, .contact__textarea');
-
-inputs.forEach(input => {
-    // Khi input có sự thay đổi (bao gồm autofill)
-    input.addEventListener('input', function () {
-        // Kiểm tra nếu có giá trị trong input, có thể là do autofill
-        if (input.value !== '') {
-            input.style.transition = 'background-color 0.5s, color 0.5s';
-            input.style.backgroundColor = 'var(--white-color)'; 
-            input.style.color = 'var(--black-color)'; 
-        } else {
-            input.style.backgroundColor = 'var(--black-color)'; 
-            input.style.color = 'var(--white-color)';
-        }
-    });
-
-    // Khi input mất focus (blur)
-    input.addEventListener('blur', function () {
-        if (input.value !== '') {
-            input.style.transition = 'background-color 0.5s, color 0.5s';
-            input.style.backgroundColor = 'var(--white-color)';
-            input.style.color = 'var(--black-color)';
-        } else {
-            input.style.transition = 'background-color 0.5s, color 0.5s';
-            input.style.backgroundColor = 'var(--black-color)';
-            input.style.color = 'var(--white-color)';
-        }
-    });
-});
