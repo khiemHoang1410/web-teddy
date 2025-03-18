@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Responsive portfolio website Rian - Bedimcode</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-circle">K</span>
+        <span class="nav__logo-name">K-TEDDY</span>
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <span class="nav__title">Menu</span>
+        <h3 class="nav__name">Gấu Bông</h3>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Trang Chủ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Sản Phẩm</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Liên Hệ</a>
+          </li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="nav__button">
+        <!-- Theme button-->
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <mai class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container grid container">
+        <h1 class="home__name">K Teddy</h1>
+        <div class="home__perfil">
+          <div class="home__image">
+            <img src="assets/img/t0.jpg" alt="image" class="home__img" />
+            <div class="home__shadow"></div>
+            <img src="assets/img/curved-arrow.svg" alt="curved-arrow" class="home__arrow" />
+            <div class="geometric-box"></div>
+          </div>
+          <div class="home__social">
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-facebook-line"></i>
+            </a>
+            <a href="#" target="_blank" class="home__social-link">
+              <i class="ri-github-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home__info">
+          <p class="home__description">
+            Những mẫu gấu bông đẹp mắt và trendy, kết hợp giữa sáng tạo và kỹ thuật tỉ mỉ, mang đến sản phẩm vừa mềm mại vừa an toàn. Từ những chú gấu bông siêu dễ thương đến các thiết kế độc đáo, luôn bắt kịp xu hướng mới nhất, giúp bạn lựa chọn được những sản phẩm ấn tượng và thú vị.
+          </p>
+          <a href="#projects" class="home__scroll">
+            <div class="home__scroll-box">
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <span class="home__scroll-text">Cuộn Xuống</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--====================  ====================-->
+    <section class="projects section" id="projects">
+      <h2 class="section__title-1">
+        <span>Sản phẩm</span>
+      </h2>
+
+      <div class="projects__container container grid" id="projects-container">
+
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <div class="contact__container grid">
+        <div class="contact__data">
+          <h2 class="section__title-2">
+            <span>Liên Hệ Với Tôi.</span>
+          </h2>
+          <p class="contact__description-1">
+            Tôi sẽ đọc tất cả các email. Gửi cho tôi bất kỳ tin nhắn nào bạn muốn và tôi sẽ phản hồi lại bạn.
+          </p>
+          <p class="contact__description-1">
+            Tôi cần <b>Họ Tên</b> và <b>Địa Chỉ Email</b> của bạn, nhưng bạn sẽ không nhận được bất kỳ thông tin nào ngoài phản hồi của tôi.
+          </p>
+          <div class="geometric-box"></div>
+        </div>
+    
+        <div class="contact__mail">
+          <h2 class="contact__title">Gửi Tin Nhắn Cho Tôi</h2>
+    
+          <form id="contact-form" class="contact__form" action="">
+            <div class="contact__group">
+              <div class="contact__box">
+                <input type="text" name="user_name" class="contact__input" id="name" required
+                  placeholder="Họ Tên" />
+                <label for="name" class="contact__label">Họ Tên</label>
+              </div>
+    
+              <div class="contact__box">
+                <input type="email" name="user_email" class="contact__input" id="email" required
+                  placeholder="Địa Chỉ Email" />
+                <label for="email" class="contact__label">Địa Chỉ Email</label>
+              </div>
+    
+            </div>
+            <div class="contact__box">
+              <input type="text" name="user_subject" class="contact__input" id="subject" required
+                placeholder="Chủ Đề" />
+              <label for="subject" class="contact__label">Chủ Đề</label>
+            </div>
+    
+            <div class="contact__box contact__area">
+              <textarea name="user_message" id="message" class="contact__input" required
+                placeholder="Tin Nhắn"></textarea>
+              <label for="message" class="contact__label">Tin Nhắn</label>
+            </div>
+            <p class="contact__message" id="contact-message"></p>
+            <button class="contact__button button" type="submit">
+              <i class="ri-send-plane-line"></i> Gửi Tin Nhắn
+            </button>
+          </form>
+        </div>
+    
+        <div class="contact__social">
+          <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow" />
+    
+          <div class="contact__social-data">
+            <div>
+              <p class="contact__social-description-1">Không gửi email</p>
+              <p class="contact__social-description-2">
+                Viết cho tôi trên các mạng xã hội
+              </p>
+            </div>
+    
+            <div class="contact__social-links">
+              <a href="#" target="_blank" class="contact__social-link">
+                <i class="ri-facebook-box-line"></i>
+              </a>
+              <a href="#" target="_blank" class="contact__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" target="_blank" class="contact__social-link">
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <ul class="footer__links">
+        <li><a href="#about" class="footer__link">About</a></li>
+        <li><a href="#services" class="footer__link">Service</a></li>
+        <li><a href="#projects" class="footer__link">Projects</a></li>
+      </ul>
+
+      <span class="footer__copy">
+        &#169; All Rights Reserved By
+        <a href="#">Khiem.</a>
+      </span>
+    </div>
+  </footer>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-s-line"></i>
+  </a>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== EMAIL JS ===============-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  <script src="projects.js"></script>
+</body>
+
+</html>
